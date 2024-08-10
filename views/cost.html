@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cost.css">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="../Images/logo1.png" alt="logo" class="logo">
+        <div class ="button">
+        
+            <button class="btn" type="button"  onclick="window.location.href='../views/user_dashboard.html'">Home</button>
+            <button class="btn" type="button"   onclick="window.location.href='../views/Place.html'">Place Order</button>
+            <button class="btn" type="buttom" onclick="window.location.href='../views/your_order.html'">Your Order</button>
+            <button class="btn" id="home" onclick="window.location.href=''">Cost Cal.</button>
+        </div>
+    </div>
+
+    <div class="cal">
+        <h1>Cost Calculater</h1>
+        <form id="orderForm">
+            <input type="text" id="item" placeholder="Item" required>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <input type="number" id="weight" placeholder="Weight" required>
+            <input type="number" id="distance" placeholder="Distance" required>
+            
+            <button type="submit" class="cl">Calculate Cost</button>
+        </form>
+        <p>Total Cost: <span id="cost"> ₹0.00</span></p>
+    </div>
+    <script src="../js/cost.js"></script>
+</body>
+</html>

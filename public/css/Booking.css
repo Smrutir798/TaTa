@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url(../Images/22.jpg);
+}
+
+.container {
+    perspective: 1000px;
+   
+}
+
+.truck-card {
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease;
+}
+
+.truck-card:hover {
+    transform: rotateY(0deg);
+}
+
+.truck {
+    width: 100%;
+    height: 200px;
+    background: #e0e0e0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+
+.truck img {
+    width: 100%;
+    height: auto;
+}
+
+.booking-info {
+    padding: 20px;
+}
+
+.booking-info h2 {
+    margin-top: 0;
+}
+
+.booking-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-info label {
+    margin-top: 10px;
+}
+
+.booking-info input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-info button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.booking-info button:hover {
+    background: #0056b3;
+} 
+
+

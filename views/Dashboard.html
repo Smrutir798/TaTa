@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Update</title>
+    <link rel="stylesheet" href="../css/dash.css">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="../Images/logo1.png" alt="logo" class="logo">
+        <div class="button">
+            <button class="btn" type="button" id="home" onclick="window.location.href='index.html'">Home</button>
+            <button class="btn" type="button" id="Truck" onclick="window.location.href='../views/truck.html'">Truck</button>
+            <button class="btn" onclick="window.location.href='../views/order.html'">Order</button>
+        </div>
+    </div>
+
+    <div class="update">
+        <div class="inner_update">
+            <h1>Update Order Status</h1>
+            <form class="inserting" action="/api/update-order-status" method="POST">
+                <label for="order_id">Order ID:</label>
+                <input type="text" id="order_id" name="order_id" required>
+                <br><br>
+                
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="received">Received</option>
+                    <option value="in_transit">In Transit</option>
+                    <option value="complete">Complete</option>
+                </select>
+                <br><br>
+                
+                <button type="submit" class="btn5">Update Status</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/dash.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Truck Booking Page</title>
+    <link rel="stylesheet" href="../css/Booking.css">
+</head>
+<body>
+    <div class="container">
+        <div class="truck-card">
+            <div class="truck">
+                <img src="../Images/11-1920x852.jpg"alt="">
+            </div>
+            <div class="booking-info">
+                <h2>Book a Truck</h2>
+                <form id="booking-form">
+                    <label for="pickup">Pickup Location:</label>
+                    <input type="text" id="pickup" name="pickup">
+                    <label for="dropoff">Dropoff Location:</label>
+                    <input type="text" id="dropoff" name="dropoff">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight">
+                    <label for="distance">Distance (km):</label>
+                    <input type="number" id="distance" name="distance">
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/Booking.js"></script>
+</body>
+</html>
